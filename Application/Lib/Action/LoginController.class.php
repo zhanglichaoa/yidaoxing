@@ -17,9 +17,16 @@ class LoginController extends Controller{
 			   }
 			   if($user=="")
 			   {
-				    $this-assign("帐号不能为空");
+				     alert("帐号不正确");
+				    //$this-assign("帐号不能为空");
+				     return false;
+			   }
+			   if($pass=="")
+			   {
+				       $this-assign("密码不能为空");
 				   
 			   }
+			   
 		 }
 		 
 		 
